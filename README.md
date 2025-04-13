@@ -1,27 +1,55 @@
-# README
+# Disclaimer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Important Notice**: This project and its documentation are solely generated using AI-assisted coding. While the implementation follows general best practices, it may not fully adhere to all coding standards and conventions. This is intended as a proof of concept (POC) and should be reviewed and adapted according to your specific requirements and coding standards.
 
-Things you may want to cover:
+# Sorcery to Devise Migration Project
 
-* Ruby version
+This project demonstrates a secure and seamless migration from the Sorcery authentication gem to Devise in a Rails application.
 
-* System dependencies
+## Prerequisites
 
-* Configuration
+- Ruby 3.3.4 or higher
+- Rails 8.0.2 or higher
+- PostgreSQL 9.3 or higher
+- Bundler 2.0 or higher
 
-* Database creation
+## Installation
 
-* Database initialization
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/sorcery.git
+   cd sorcery
+   ```
 
-* How to run the test suite
+2. Install dependencies:
+   ```bash
+   bundle install
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+3. Set up the database:
+   ```bash
+   bin/rails db:create
+   bin/rails db:migrate
+   ```
 
-* Deployment instructions
+4. Start the server:
+   ```bash
+   bin/rails server
+   ```
 
-* ...
+## Configuration
+
+The application uses the following environment variables:
+
+- `DATABASE_URL`: PostgreSQL connection string
+- `RAILS_ENV`: Application environment (development, test, production)
+- `RAILS_MASTER_KEY`: Required for production environment
+
+## Development
+
+- Run tests: `bin/rails test`
+- Run migrations: `bin/rails db:migrate`
+- Run console: `bin/rails console`
 
 # Sorcery to Devise Migration Guide
 
