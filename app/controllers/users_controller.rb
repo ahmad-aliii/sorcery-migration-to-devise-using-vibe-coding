@@ -7,6 +7,8 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @user.auth_system = 'sorcery'  # Force using Sorcery for new users
+    
     if @user.save
       auto_login(@user)
       redirect_to root_path, notice: 'Registration successful!'

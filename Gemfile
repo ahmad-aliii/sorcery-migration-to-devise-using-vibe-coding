@@ -18,6 +18,8 @@ gem "stimulus-rails"
 gem "jbuilder"
 # Authentication solution [https://github.com/Sorcery/sorcery]
 gem "sorcery"
+# New authentication solution [https://github.com/heartcombo/devise]
+gem "devise"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
